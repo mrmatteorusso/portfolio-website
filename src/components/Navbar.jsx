@@ -1,34 +1,36 @@
-import './App.css';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from './pages/Home';
-import Projects from "./pages/Projects";
-import Contacts from "./pages/Contacts";
+import React from "react";
+import { BrowserRouter, Router, Route, Link } from "react-router-dom";
+import Home from "../pages/Home";
+import Projects from "../pages/Projects";
+import Contacts from "../pages/Contacts";
 
-function App() {
+function Navbar() {
   return (
     <BrowserRouter>
-      <div className='App'>
-        <nav className="nav-bar">
+      <nav className="nav-bar">
+        <li>
           <Link className="item-navbar" to="/">
             home
           </Link>
+        </li>
+        <li>
           <Link className="item-navbar" to="/projects">
             projects
           </Link>
+        </li>
+        <li>
           <Link className="item-navbar " to="/contacts">
             Contacts
           </Link>
-        </nav>
-      </div>
-
-      <Routes>
+        </li>
+      </nav>
+      <Router>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contacts" element={<Contacts />} />
-      </Routes>
-
+      </Router>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default Navbar;
