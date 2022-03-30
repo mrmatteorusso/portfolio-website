@@ -5,6 +5,7 @@ picture
 ### Table of Contents:
 
 - [Description](#description)
+- [How to run the app](#how-to-run-the-app)
 - [Contributing](#contributing)
 - [Reference](#reference)
 - [License](#license)
@@ -21,6 +22,19 @@ This is my Portfolio Website where I show my projects and my contact details. In
 - HTML
 - CSS
 - React
+
+---
+
+## How to run the app
+
+In the project directory, after cloning it:
+
+#### `npm install`
+
+#### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ---
 
@@ -49,19 +63,4 @@ Licensed under [MIT License](http://opensource.org/licenses/MIT).
 
 ---
 
-[Back to the top](#Portfolio-Website)
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## How to run the app
-
-In the project directory, after cloning it:
-
-### `npm install`
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Back to the top](#portfolio-website)
