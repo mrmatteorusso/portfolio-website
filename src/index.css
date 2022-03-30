@@ -13,7 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #22272e;
   color: #a4aab9;
-  cursor: pointer;
 }
 
 code {
@@ -22,29 +21,128 @@ code {
 }
 
 .nav-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
   margin: 1rem 2rem;
+  background-color: #22272e;
+  background-color: white;
+
   /* background-color: black; */
   display: flex;
   list-style-type: none;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .item-navbar {
   text-decoration: none;
   padding: 0 1rem;
   color: #a4aab9;
-  cursor: pointer;
 }
 
 .item-navbar:hover {
   text-decoration: none;
   padding: 0 1rem;
   color: #ec775c;
-  cursor: pointer;
   text-shadow: 0 0 10px#f7b6a8, 0 0 0px#ffffff;
   /* text-shadow: 0 0 10px#f7b6a8, 0 0 20px#f7b6a8; */
 }
 
 .myriad-font {
   font-family: "PT Sans", sans-serif;
+}
+
+/*Home*/
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: flex-start;
+  margin: 0rem 30rem;
+}
+
+.main-title h3 {
+  color: white;
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.main-title p {
+  color: rgb(87, 69, 88);
+  font-size: 1rem;
+  font-size: 2rem;
+}
+
+/*Projects*/
+
+.projects-container {
+  margin: 2rem 0;
+}
+
+.projects-main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 6rem;
+}
+
+img {
+  height: 200px;
+  width: 355px;
+  background-color: #a4aab9;
+  border: 1px solid white;
+  border: 1px solid #a4aab9;
+  margin-right: 2rem;
+}
+
+.projects-item {
+  display: flex;
+  padding: 1rem;
+}
+
+.projects-item h3 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.projects-item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.projects-item-text-links a {
+  color: rgb(150, 120, 151);
+}
+
+.projects-item-text-links a:hover {
+  color: rgb(87, 69, 88);
+}
+
+/* Contacts */
+.contacts-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-main {
+  display: flex;
+  justify-content: space-between;
+  width: 100vh;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #a4aab9;
+}
+
+li {
+  list-style-type: none;
 }

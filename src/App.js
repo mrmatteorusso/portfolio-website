@@ -10,10 +10,10 @@ function App() {
       <div className='App'>
         <nav className="nav-bar">
           <Link className="item-navbar" to="/">
-            home
+            Home
           </Link>
           <Link className="item-navbar" to="/projects">
-            projects
+            Projects
           </Link>
           <Link className="item-navbar " to="/contacts">
             Contacts
