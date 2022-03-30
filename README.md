@@ -1,6 +1,6 @@
 # Portfolio Website
 
-picture
+![portfolio-website](https://user-images.githubusercontent.com/80893528/160882160-617bc8ad-5c54-4a0c-9455-569896ef5f5a.PNG)
 
 ### Table of Contents:
 
