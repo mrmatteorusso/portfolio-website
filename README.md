@@ -1,6 +1,7 @@
 # Portfolio Website
 
-![portfolio-website](https://user-images.githubusercontent.com/80893528/160882160-617bc8ad-5c54-4a0c-9455-569896ef5f5a.PNG)
+![portfolio-website2](https://user-images.githubusercontent.com/80893528/160882593-09424962-0e6a-4ce4-b6f8-b739c02290a6.png)
+
 
 ### Table of Contents:
 
