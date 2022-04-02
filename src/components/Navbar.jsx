@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Router, Route, Link } from "react-router-dom";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
-import Contacts from "../pages/Contacts";
+import About from "../pages/About";
 
 function Navbar() {
   return (
@@ -19,15 +19,15 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link className="item-navbar " to="/contacts">
-            Contacts
+          <Link className="item-navbar " to="/about">
+            About
           </Link>
         </li>
       </nav>
       <Router>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/about" element={<About />} />
       </Router>
     </BrowserRouter>
   );

@@ -3,136 +3,160 @@ import portfolio from "../assets/img/portfolio-website.PNG";
 import teamGenerator from "../assets/img/team-generator.PNG";
 import weather from "../assets/img/weather-app.PNG";
 import todolist from "../assets/img/todolist.PNG";
+import { useNavigate } from "react-router-dom";
 
 function Projects() {
+  let navigate = useNavigate();
+  function handleClick() {
+    navigate("/");
+  }
   return (
     <div className="projects-container">
       <ul className="projects-main">
         <li className="projects-item">
-          <img src={portfolio} alt="" />
+          <img
+            className="projects-item-pic"
+            src={portfolio}
+            alt="Portfolio Website"
+          />
           <div className="projects-item-text">
             <h3>Portfolio Website</h3>
+            <h4>Technologies: HTML, CSS, Javascript, React</h4>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
-              earum libero voluptatum vitae reprehenderit autem nam quasi velit!
-              Assumenda similique, totam voluptatem consequatur atque mollitia
-              consequuntur nesciunt soluta perspiciatis quaerat adipisci rerum,
-              inventore sapiente provident velit sed veniam, ut officiis.
-              Corrupti veniam, eaque distinctio libero est incidunt! Ad,
-              corrupti itaque.
+              This is my Portfolio Website where I show my projects and my
+              contact details. In the Projects session is stored a list of
+              projects with a snapshot of the main page, a short description of
+              the project, a link to the Live and a link to the code on Github.
             </p>
             <div className="projects-item-text-links">
-              <a
-                href="https://github.com/mrmatteorusso"
-                target="_blank"
-                rel="noreferrer"
+              <button className="button-external-link" onClick={handleClick}>
+                Live
+              </button>
+              <button
+                className="button-external-link"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/mrmatteorusso/portfolio-website",
+                    "_blank"
+                  )
+                }
               >
-                Live Website
-              </a>
-              <br />
-              <a
-                href="https://github.com/mrmatteorusso"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Code in Github
-              </a>
+                Github
+              </button>
             </div>
           </div>
         </li>
         <li className="projects-item">
-          <img src={todolist} alt="" />
+          <img className="projects-item-pic" src={todolist} alt="Todo List" />
           <div className="projects-item-text">
-            <h3>Todo List</h3>
+            <h3>Memory Aid</h3>
+            <h4>Technologies: HTML, CSS, Javascript, React</h4>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
-              earum libero voluptatum vitae reprehenderit autem nam quasi velit!
-              Assumenda similique, totam voluptatem consequatur atque mollitia
-              consequuntur nesciunt soluta perspiciatis quaerat adipisci rerum,
-              inventore sapiente provident velit sed veniam, ut officiis.
-              Corrupti veniam, eaque distinctio libero est incidunt! Ad,
-              corrupti itaque.
+              Memory aid allows you to enter how many items you need and store
+              them temporarly. Please note that once the page is refreshed or
+              re-opened the items will disappear.
             </p>
             <div className="projects-item-text-links">
-              <a
-                href="https://github.com/mrmatteorusso"
-                target="_blank"
-                rel="noreferrer"
+              <button
+                className="button-external-link"
+                onClick={
+                  () =>
+                    window.open(
+                      "https://memoryaid-thingstoremember.vercel.app/",
+                      "_blank"
+                    ) //check link
+                }
               >
-                Live Website
-              </a>
-              <br />
-              <a
-                href="https://github.com/mrmatteorusso"
-                target="_blank"
-                rel="noreferrer"
+                Live
+              </button>
+              <button
+                className="button-external-link"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/mrmatteorusso/todo-react",
+                    "_blank"
+                  )
+                }
               >
-                Code in Github
-              </a>
+                Github
+              </button>
             </div>
           </div>
         </li>
         <li className="projects-item">
-          <img src={weather} alt="" />
+          <img className="projects-item-pic" src={weather} alt="" />
           <div className="projects-item-text">
             <h3>Weather App</h3>
+            <h4>Technologies: HTML, CSS, JavaScript</h4>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
-              earum libero voluptatum vitae reprehenderit autem nam quasi velit!
-              Assumenda similique, totam voluptatem consequatur atque mollitia
-              consequuntur nesciunt soluta perspiciatis quaerat adipisci rerum,
-              inventore sapiente provident velit sed veniam, ut officiis.
-              Corrupti veniam, eaque distinctio libero est incidunt! Ad,
-              corrupti itaque.
+              City Weather allows you to enter a city and visualise its
+              temperature, wind speed, humidity. The App is able to show 7 day
+              forecasts. The programme uses APIs from openweathermap.org and
+              deploys its results as text and icons.
             </p>
+
             <div className="projects-item-text-links">
-              <a
-                href="https://github.com/mrmatteorusso"
-                target="_blank"
-                rel="noreferrer"
+              <button
+                className="button-external-link"
+                onClick={() =>
+                  window.open(
+                    "https://city-weather-alpha.vercel.app/",
+                    "_blank"
+                  )
+                }
               >
-                Live Website
-              </a>
-              <br />
-              <a
-                href="https://github.com/mrmatteorusso"
-                target="_blank"
-                rel="noreferrer"
+                Live
+              </button>
+              <button
+                className="button-external-link"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/mrmatteorusso/cityWeather",
+                    "_blank"
+                  )
+                }
               >
-                Code in Github
-              </a>
+                Github
+              </button>
             </div>
           </div>
         </li>
         <li className="projects-item">
-          <img src={teamGenerator} alt="" />
+          <img className="projects-item-pic" src={teamGenerator} alt="" />
           <div className="projects-item-text">
             <h3>Team Generator</h3>
+            <h4>Technologies: HTML, CSS, JavaScript</h4>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
-              earum libero voluptatum vitae reprehenderit autem nam quasi velit!
-              Assumenda similique, totam voluptatem consequatur atque mollitia
-              consequuntur nesciunt soluta perspiciatis quaerat adipisci rerum,
-              inventore sapiente provident velit sed veniam, ut officiis.
-              Corrupti veniam, eaque distinctio libero est incidunt! Ad,
-              corrupti itaque.
+              Team generator is a sleek App that allows you to enter a list of
+              name and create how many groups you wish in a random fashion. When
+              names are entered, space between letters counts and it is
+              considerated a separator from one name to another.The generate
+              button allows to create as many combination as needed and the
+              output can be selected, copied and pasted.
             </p>
             <div className="projects-item-text-links">
-              <a
-                href="https://github.com/mrmatteorusso"
-                target="_blank"
-                rel="noreferrer"
+              <button
+                className="button-external-link"
+                onClick={() =>
+                  window.open(
+                    "https://team-generator-online.vercel.app/",
+                    "_blank"
+                  )
+                }
               >
-                Live Website
-              </a>
-              <br />
-              <a
-                href="https://github.com/mrmatteorusso"
-                target="_blank"
-                rel="noreferrer"
+                Live
+              </button>
+              <button
+                className="button-external-link"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/mrmatteorusso/Team-Generator-Online",
+                    "_blank"
+                  )
+                }
               >
-                Code in Github
-              </a>
+                Github
+              </button>
             </div>
           </div>
         </li>
