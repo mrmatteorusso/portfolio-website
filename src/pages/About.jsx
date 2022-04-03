@@ -40,8 +40,8 @@ function About() {
         <section id="about-text">
           <h3>My path</h3>
           <p>
-            My focus for years was on running my nursery nurse and yoga
-            businesses. The pandemic changed many things.
+            My focus for years was on running my pre-school and yoga business.
+            The pandemic changed many things.
           </p>
           <p>
             I remained positive and seized the opportunity to commit: to
