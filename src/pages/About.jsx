@@ -4,9 +4,8 @@ import pictureMR from "../assets/img/mr1.png";
 function About() {
   return (
     <div className="about-page">
-      <ul className="about-main">
+      <div className="about-main">
         <section id="about-picture">
-          {/* <p>icon</p> */}
           <img id="pictureMR" src={pictureMR} alt="" />
 
           <h3>Connect with me</h3>
@@ -59,7 +58,7 @@ function About() {
             living on the cutting edge.
           </p>
         </section>
-      </ul>
+      </div>
     </div>
   );
 }
