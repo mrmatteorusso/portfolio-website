@@ -14,7 +14,7 @@ function Projects() {
   return (
     <div className="projects-container">
       <ul className="projects-main">
-      <li className="projects-item">
+        <li className="projects-item">
           <img
             className="projects-item-pic"
             src={productList}
@@ -22,25 +22,25 @@ function Projects() {
           />
           <div className="projects-item-text">
             <h3>Product List - Full stack</h3>
-            <h4>Technologies: PHP, MySQL, JS, Bootstrap</h4>
+            <h4>Technologies: OOP PHP, MySQL, React, Responsive Bootstrap</h4>
             <p>
               This is an online Shopping list that displays a number of products. It allows to add a new product or to select multiple products and delete them.
             </p>
             <div className="projects-item-text-links">
               <button className="button-external-link" onClick={
-                  () =>
-                    window.open(
-                      "https://class-product-list.herokuapp.com/",
-                      "_blank"
-                    ) //check link
-                }>
+                () =>
+                  window.open(
+                    "https://scandiweb-fe.herokuapp.com/",
+                    "_blank"
+                  ) //check link
+              }>
                 Live
               </button>
               <button
                 className="button-external-link"
                 onClick={() =>
                   window.open(
-                    "https://github.com/mrmatteorusso/product-list-scandiweb-back-to-simple",
+                    "https://github.com/mrmatteorusso/product-frontend",
                     "_blank"
                   )
                 }
