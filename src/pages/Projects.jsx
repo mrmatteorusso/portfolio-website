@@ -1,6 +1,7 @@
 import React from "react";
 import portfolio from "../assets/img/portfolio-website.PNG";
 import productList from "../assets/img/product-list-homepage.PNG";
+import matteorussowebsite from "../assets/img/matteorusso-yoga-frontpage.png";
 import teamGenerator from "../assets/img/team-generator.PNG";
 import weather from "../assets/img/weather-app.PNG";
 import todolist from "../assets/img/todolist.PNG";
@@ -14,6 +15,7 @@ function Projects() {
   return (
     <div className="projects-container">
       <ul className="projects-main">
+
         <li className="projects-item">
           <img
             className="projects-item-pic"
@@ -41,6 +43,42 @@ function Projects() {
                 onClick={() =>
                   window.open(
                     "https://github.com/mrmatteorusso/product-frontend",
+                    "_blank"
+                  )
+                }
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </li>
+        <li className="projects-item">
+          <img
+            className="projects-item-pic"
+            src={matteorussowebsite}
+            alt="product-list-fullstack"
+          />
+          <div className="projects-item-text">
+            <h3>matteorusso.yoga - My current business website</h3>
+            <h4>Technologies: HTML, CSS, JS</h4>
+            <p>
+              This is an online business yoga website. It shows my profile, info and contacts as yoga teacher.
+            </p>
+            <div className="projects-item-text-links">
+              <button className="button-external-link" onClick={
+                () =>
+                  window.open(
+                    "https://matteorusso.yoga/",
+                    "_blank"
+                  ) //check link
+              }>
+                Live
+              </button>
+              <button
+                className="button-external-link"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/mrmatteorusso/bormio-yoga",
                     "_blank"
                   )
                 }
