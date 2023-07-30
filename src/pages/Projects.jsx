@@ -1,21 +1,52 @@
 import React from "react";
-import portfolio from "../assets/img/portfolio-website.PNG";
 import productList from "../assets/img/product-list-homepage.PNG";
 import matteorussowebsite from "../assets/img/matteorusso-yoga-frontpage.png";
 import teamGenerator from "../assets/img/team-generator.PNG";
 import weather from "../assets/img/weather-app.PNG";
+import Vanlife from "../assets/img/vanlife-all.png";
 import todolist from "../assets/img/todolist.PNG";
-import { useNavigate } from "react-router-dom";
 
 function Projects() {
-  let navigate = useNavigate();
-  function handleClick() {
-    navigate("/");
-  }
+
   return (
     <div className="projects-container">
       <ul className="projects-main">
-
+        <li className="projects-item">
+          <img
+            className="projects-item-pic"
+            src={Vanlife}
+            alt="vanlife"
+          />
+          <div className="projects-item-text">
+            <h3>Vanlife - Full stack</h3>
+            <h4>Technologies: React, Firebase, Netlifly</h4>
+            <p>
+              This is a fiction van renting service where host can list their own van and user can navigate and access different sections such as single van, statistics, login area.
+            </p>
+            <div className="projects-item-text-links">
+              <button className="button-external-link" onClick={
+                () =>
+                  window.open(
+                    "https://chipper-syrniki-b711fa.netlify.app/",
+                    "_blank"
+                  )
+              }>
+                Live
+              </button>
+              <button
+                className="button-external-link"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/mrmatteorusso/vanlife",
+                    "_blank"
+                  )
+                }
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </li>
         <li className="projects-item">
           <img
             className="projects-item-pic"
@@ -70,7 +101,7 @@ function Projects() {
                   window.open(
                     "https://matteorusso.yoga/",
                     "_blank"
-                  ) //check link
+                  )
               }>
                 Live
               </button>
@@ -79,39 +110,6 @@ function Projects() {
                 onClick={() =>
                   window.open(
                     "https://github.com/mrmatteorusso/bormio-yoga",
-                    "_blank"
-                  )
-                }
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </li>
-        <li className="projects-item">
-          <img
-            className="projects-item-pic"
-            src={portfolio}
-            alt="Portfolio Website"
-          />
-          <div className="projects-item-text">
-            <h3>Portfolio Website</h3>
-            <h4>Technologies: HTML, CSS, Javascript, React</h4>
-            <p>
-              This is my Portfolio Website where I show my projects and my
-              contact details. In the Projects session is stored a list of
-              projects with a snapshot of the main page, a short description of
-              the project, a link to the Live and a link to the code on Github.
-            </p>
-            <div className="projects-item-text-links">
-              <button className="button-external-link" onClick={handleClick}>
-                Live
-              </button>
-              <button
-                className="button-external-link"
-                onClick={() =>
-                  window.open(
-                    "https://github.com/mrmatteorusso/portfolio-website",
                     "_blank"
                   )
                 }
