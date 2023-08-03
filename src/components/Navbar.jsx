@@ -1,36 +1,42 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BrowserRouter, Router, Route, Link } from "react-router-dom";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
-import About from "../pages/About";
+import ContactMe from "../pages/About";
 
-function Navbar() {
+const scrollToRef = (ref) => {
+  ref.current.scrollIntoView({ behavior: "smooth" });
+};
+
+export default function Navbar() {
+  const homeRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <BrowserRouter>
       <nav className="nav-bar">
         <li>
-          <Link className="item-navbar" to="/">
-            home
+          <Link className="item-navbar" to="/" onClick={() => scrollToRef(homeRef)}>
+            Home
           </Link>
         </li>
         <li>
-          <Link className="item-navbar" to="/projects">
-            projects
+          <Link className="item-navbar" to="/projects" onClick={() => scrollToRef(projectsRef)}>
+            Projects
           </Link>
         </li>
         <li>
-          <Link className="item-navbar " to="/about">
-            About
+          <Link className="item-navbar" to="/contact-me" onClick={() => scrollToRef(contactRef)}>
+            Contact me
           </Link>
         </li>
       </nav>
       <Router>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<Home homeRef={homeRef} />} />
+        <Route path="/projects" element={<Projects projectsRefRef={projectsRef} />} />
+        <Route path="/contact-me" element={<ContactMe contactRef={contactRef} />} />
       </Router>
     </BrowserRouter>
   );
 }
-
-export default Navbar;

@@ -9,16 +9,19 @@ import todolist from "../assets/img/todolist.PNG";
 function Projects() {
 
   return (
-    <div className="projects-container">
+    <div id="projects" className="projects-container">
+      <h2 className="section-title">Projects</h2>
       <ul className="projects-main">
         <li className="projects-item">
-          <img
-            className="projects-item-pic"
-            src={Vanlife}
-            alt="vanlife"
-          />
-          <div className="projects-item-text">
+          <div className="projects-item-show">
             <h3>Vanlife - Full stack</h3>
+            <img
+              className="projects-item-pic"
+              src={Vanlife}
+              alt="vanlife"
+            />
+          </div>
+          <div className="projects-item-text">
             <h4>Technologies: React, Firebase, Netlifly</h4>
             <p>
               This is a fiction van renting service where host can list their own van and user can navigate and access different sections such as single van, statistics, login area.
@@ -48,13 +51,15 @@ function Projects() {
           </div>
         </li>
         <li className="projects-item">
-          <img
-            className="projects-item-pic"
-            src={productList}
-            alt="product-list-fullstack"
-          />
-          <div className="projects-item-text">
+          <div className="projects-item-show">
             <h3>Product List - Full stack</h3>
+            <img
+              className="projects-item-pic"
+              src={productList}
+              alt="product-list-fullstack"
+            />
+          </div>
+          <div className="projects-item-text">
             <h4>Technologies: OOP PHP, MySQL, React, Responsive Bootstrap</h4>
             <p>
               This is an online Shopping list that displays a number of products. It allows to add a new product or to select multiple products and delete them.
@@ -84,13 +89,16 @@ function Projects() {
           </div>
         </li>
         <li className="projects-item">
-          <img
-            className="projects-item-pic"
-            src={matteorussowebsite}
-            alt="product-list-fullstack"
-          />
+          <div className="projects-item-show">
+
+            <h3>matteorusso.yoga</h3>
+            <img
+              className="projects-item-pic"
+              src={matteorussowebsite}
+              alt="product-list-fullstack"
+            />
+          </div>
           <div className="projects-item-text">
-            <h3>matteorusso.yoga - My current business website</h3>
             <h4>Technologies: HTML, CSS, JS</h4>
             <p>
               This is an online business yoga website. It shows my profile, info and contacts as yoga teacher.
@@ -120,9 +128,11 @@ function Projects() {
           </div>
         </li>
         <li className="projects-item">
-          <img className="projects-item-pic" src={todolist} alt="Todo List" />
-          <div className="projects-item-text">
+          <div className="projects-item-show">
             <h3>Memory Aid</h3>
+            <img className="projects-item-pic" src={todolist} alt="Todo List" />
+          </div>
+          <div className="projects-item-text">
             <h4>Technologies: HTML, CSS, Javascript, React</h4>
             <p>
               Memory aid allows you to enter how many items you need and store
@@ -157,9 +167,11 @@ function Projects() {
           </div>
         </li>
         <li className="projects-item">
-          <img className="projects-item-pic" src={weather} alt="" />
-          <div className="projects-item-text">
+          <div className="projects-item-show">
             <h3>Weather App</h3>
+            <img className="projects-item-pic" src={weather} alt="" />
+          </div>
+          <div className="projects-item-text">
             <h4>Technologies: HTML, CSS, JavaScript</h4>
             <p>
               City Weather allows you to enter a city and visualise its
@@ -195,9 +207,11 @@ function Projects() {
           </div>
         </li>
         <li className="projects-item">
-          <img className="projects-item-pic" src={teamGenerator} alt="" />
-          <div className="projects-item-text">
+          <div className="projects-item-show">
             <h3>Team Generator</h3>
+            <img className="projects-item-pic" src={teamGenerator} alt="" />
+          </div>
+          <div className="projects-item-text">
             <h4>Technologies: HTML, CSS, JavaScript</h4>
             <p>
               Team generator is a sleek App that allows you to enter a list of

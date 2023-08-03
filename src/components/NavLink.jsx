@@ -8,9 +8,8 @@ function NavLink({ path, text }) {
 
   return (
     <Link
-      className={`item-navbar ${
-        currentRoute === path ? "item-navbar-current" : ""
-      }`}
+      className={`item-navbar ${currentRoute === path ? "item-navbar-current" : ""
+        }`}
       to={path}
     >
       {text}

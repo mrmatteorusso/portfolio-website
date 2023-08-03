@@ -1,19 +1,20 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter } from "react-router-dom";
-import Navbar from './Navbar';
+import React from "react";
+import ContactMe from "./pages/ContactMe";
+import Projects from "./pages/Projects";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Navbar from "./Navbar";
 
-
-
-
-function AppContainer() {
-  // const location = useLocation()
-
+function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
-    </BrowserRouter>
+      <Home />
+      <Projects />
+      <ContactMe />
+      <Footer />
+    </>
   );
 }
 
-export default AppContainer;
+export default App;
