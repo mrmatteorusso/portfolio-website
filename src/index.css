@@ -92,8 +92,8 @@ body {
   margin-bottom: 2em;
 }
 
-.main-info a:visited,
-.main-info a:active {
+.main-info p a:visited,
+.main-info p a:active {
   color: white;
 }
 
@@ -105,6 +105,9 @@ body {
   border-radius: 10px;
   display: block;
   text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+
   margin: 2em 0;
 }
 
