@@ -26,7 +26,7 @@ function Home() {
             Moreover, the dynamic nature of the tech industry intrigues me, as it continually presents opportunities for learning and growth.
             In my spare time I volunteer as teacher, practice Yoga and hike.
           </p>
-          <a className="linkToResume" href="https://drive.google.com/file/d/1x0DHEvPRaMJUQjrWW9DmfMCDWEmNdAXy/view?usp=drive_link">Download my Resume</a>
+          <a className="linkToResume" href="https://drive.google.com/file/d/1jIj-TEEAyiYYKwdyRD8W45JF8vdn7ZQO/view?usp=drive_link">Download my Resume</a>
         </section>
         <section className="main-technologies">
           <h2 className="section-title">Technologies</h2>
