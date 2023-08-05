@@ -9,6 +9,14 @@ function ContactMe({ contactMeRef }) {
 
       <h2 className="section-title">Contact me</h2>
       <ul>
+        <li id="contact-me-picture-container-buttons">
+          <a
+            className="contact-me-picture-container-button-external-link"
+            href="https://github.com/mrmatteorusso"
+          >
+            <img src={GithubLogo} alt="Github Logo" />
+          </a>
+        </li>
         <li><a
           href="mailto:mrmatteorusso@gmail.com"
           onClick={(e) => {
@@ -19,6 +27,7 @@ function ContactMe({ contactMeRef }) {
           <img src={Mail} alt="mail logo" />
 
         </a></li>
+
         <li id="contact-me-picture-container-buttons">
           <a
             className="contact-me-picture-container-button-external-link"
@@ -28,14 +37,7 @@ function ContactMe({ contactMeRef }) {
 
           </a>
         </li>
-        <li id="contact-me-picture-container-buttons">
-          <a
-            className="contact-me-picture-container-button-external-link"
-            href="https://github.com/mrmatteorusso"
-          >
-            <img src={GithubLogo} alt="Github Logo" />
-          </a>
-        </li>
+
       </ul>
     </div>
   );

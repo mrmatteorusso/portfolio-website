@@ -22,10 +22,10 @@ function Projects() {
             />
           </div>
           <div className="projects-item-text">
-            <h4>Technologies: React, Firebase, Netlifly</h4>
             <p>
               This is a fiction van renting service where host can list their own van and user can navigate and access different sections such as single van, statistics, login area.
             </p>
+            <h4>Technologies: React, Firebase, Netlifly</h4>
             <div className="projects-item-text-links">
               <button className="button-external-link" onClick={
                 () =>
@@ -60,10 +60,10 @@ function Projects() {
             />
           </div>
           <div className="projects-item-text">
-            <h4>Technologies: OOP PHP, MySQL, React, Responsive Bootstrap</h4>
             <p>
               This is an online Shopping list that displays a number of products. It allows to add a new product or to select multiple products and delete them.
             </p>
+            <h4>Technologies: OOP PHP, MySQL, React, Responsive Bootstrap</h4>
             <div className="projects-item-text-links">
               <button className="button-external-link" onClick={
                 () =>
@@ -99,10 +99,10 @@ function Projects() {
             />
           </div>
           <div className="projects-item-text">
-            <h4>Technologies: HTML, CSS, JS</h4>
             <p>
               This is an online business yoga website. It shows my profile, info and contacts as yoga teacher.
             </p>
+            <h4>Technologies: HTML, CSS, JS</h4>
             <div className="projects-item-text-links">
               <button className="button-external-link" onClick={
                 () =>
@@ -129,56 +129,17 @@ function Projects() {
         </li>
         <li className="projects-item">
           <div className="projects-item-show">
-            <h3>Memory Aid</h3>
-            <img className="projects-item-pic" src={todolist} alt="Todo List" />
-          </div>
-          <div className="projects-item-text">
-            <h4>Technologies: HTML, CSS, Javascript, React</h4>
-            <p>
-              Memory aid allows you to enter how many items you need and store
-              them temporarly. Please note that once the page is refreshed or
-              re-opened the items will disappear.
-            </p>
-            <div className="projects-item-text-links">
-              <button
-                className="button-external-link"
-                onClick={
-                  () =>
-                    window.open(
-                      "https://memoryaid-thingstoremember.vercel.app/",
-                      "_blank"
-                    ) //check link
-                }
-              >
-                Live
-              </button>
-              <button
-                className="button-external-link"
-                onClick={() =>
-                  window.open(
-                    "https://github.com/mrmatteorusso/todo-react",
-                    "_blank"
-                  )
-                }
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </li>
-        <li className="projects-item">
-          <div className="projects-item-show">
             <h3>Weather App</h3>
             <img className="projects-item-pic" src={weather} alt="" />
           </div>
           <div className="projects-item-text">
-            <h4>Technologies: HTML, CSS, JavaScript</h4>
             <p>
               City Weather allows you to enter a city and visualise its
               temperature, wind speed, humidity. The App is able to show 7 day
               forecasts. The programme uses APIs from openweathermap.org and
               deploys its results as text and icons.
             </p>
+            <h4>Technologies: HTML, CSS, JavaScript</h4>
 
             <div className="projects-item-text-links">
               <button
@@ -212,15 +173,13 @@ function Projects() {
             <img className="projects-item-pic" src={teamGenerator} alt="" />
           </div>
           <div className="projects-item-text">
-            <h4>Technologies: HTML, CSS, JavaScript</h4>
             <p>
-              Team generator is a sleek App that allows you to enter a list of
-              name and create how many groups you wish in a random fashion. When
+              Team generator allows you to enter a list of
+              name and create how many groups you wish randomly. When
               names are entered, space between letters counts and it is
-              considerated a separator from one name to another.The generate
-              button allows to create as many combination as needed and the
-              output can be selected, copied and pasted.
+              considerated a separator from one name to another.
             </p>
+            <h4>Technologies: HTML, CSS, JavaScript</h4>
             <div className="projects-item-text-links">
               <button
                 className="button-external-link"
