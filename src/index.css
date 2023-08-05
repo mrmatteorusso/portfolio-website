@@ -92,6 +92,11 @@ body {
   margin-bottom: 2em;
 }
 
+.main-info a:visited,
+.main-info a:active {
+  color: white;
+}
+
 .linkToResume {
   padding: 1em 0;
   background-color: #a4aab9;
