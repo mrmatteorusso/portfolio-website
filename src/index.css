@@ -186,6 +186,7 @@ figcaption {
   margin-bottom: 0.5em;
   color: white;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .projects-item-text p,
@@ -207,7 +208,7 @@ button {
   background-color: #a4aab9;
   border: none;
   border-radius: 10px;
-  width: 135px;
+  width: 130px;
   height: 48px;
   font-weight: bold;
   letter-spacing: 0.08rem;
