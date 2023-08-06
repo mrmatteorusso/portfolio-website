@@ -413,6 +413,6 @@ button:hover {
   .projects-item-text {
     grid-column: 4 / 6;
     grid-row: 1;
-    padding-top: 2em;
+    padding: 2em 0 2em 1em;
   }
 }
