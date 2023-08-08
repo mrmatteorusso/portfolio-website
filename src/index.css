@@ -180,12 +180,13 @@ figcaption {
   height: auto;
   background-color: #a4aab9;
   border: 2px solid #a4aab9;
-  margin-right: 2rem;
+  margin-top: 0.5em;
+  /* margin-right: 2rem; */
   border-radius: 10px;
 }
 
 .projects-item-show h3 {
-  margin-bottom: 0.5em;
+  /* margin-bottom: 0.5em; */
   color: white;
   font-size: 1.5rem;
 }
