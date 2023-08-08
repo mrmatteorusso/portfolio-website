@@ -401,6 +401,11 @@ button:hover {
     margin: 3.5em 0 0;
     /* justify-self: end; */
   }
+
+  .main-technologies h2 {
+    margin-top: 1em;
+  }
+
   /*Projects*/
   .projects-item {
     display: grid;
