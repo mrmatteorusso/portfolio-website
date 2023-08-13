@@ -1,13 +1,11 @@
 import React from "react";
 import pictureMR from "../assets/img/mr1.png";
-import HTML from "../assets/img/logos/HTML5_Badge.svg"
 import CSS from "../assets/img/logos/CSS3_logo.svg"
 import JS from "../assets/img/logos/Unofficial_JavaScript_logo_2.svg"
 import PHP from "../assets/img/logos/php-logo.svg"
 import ReactLogo from "../assets/img/logos/React-icon.svg"
 import Git from "../assets/img/logos/Git_icon.svg"
 import NPM from "../assets/img/logos/npm-square-red-1.svg"
-import Heroku from "../assets/img/logos/heroku-icon.svg"
 import Postman from "../assets/img/logos/postman-icon.svg"
 import MySQL from "../assets/img/logos/MySQL-Logo.wine.svg"
 

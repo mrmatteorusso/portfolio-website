@@ -11,7 +11,6 @@ function ContactMe({ contactMeRef }) {
       <ul>
         <li id="contact-me-picture-container-buttons">
           <a
-            className="contact-me-picture-container-button-external-link"
             href="https://github.com/mrmatteorusso"
           >
             <img src={GithubLogo} alt="Github Logo" />
@@ -31,9 +30,9 @@ function ContactMe({ contactMeRef }) {
         <li id="contact-me-picture-container-buttons">
           <a
             className="contact-me-picture-container-button-external-link"
-            href="https://github.com/mrmatteorusso"
+            href="https://www.linkedin.com/in/mrmatteorusso"
           >
-            <img src={LinkedinLogo} alt="Github Logo" />
+            <img src={LinkedinLogo} alt="Linkedin Logo" />
 
           </a>
         </li>
